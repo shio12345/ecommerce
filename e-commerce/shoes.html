@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="modern-header">
+        <div class="container">
+          <div class="logo">E-Shop</div>
+          <nav class="navigation">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to E-Shop</h1>
+      <p>Your one-stop shop for all your needs!</p>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <div class="product-list">
+        <!-- Products will be dynamically added by JavaScript -->
+      </div>
+    </section>
+
+    <section id="cart" class="modern-cart">
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+          <div class="cart-items">
+            <p>Your cart is empty.</p>
+          </div>
+          <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Total Items:</strong> <span id="total-items">0</span></p>
+            <p><strong>Total Price:</strong> ₱<span id="total-price">0.00</span></p>
+            <button id="checkout-btn" class="checkout-button">Proceed to Checkout</button>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2024 E-Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="shoes.js"></script>
+</body>
+</html>

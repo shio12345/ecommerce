@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.content {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2; 
+    color: white; 
+}
+
+.content h2{
+    font-family: "Ruslan Display", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; /* Places the video behind other content */
+}
+.hero-section {
+   min-height: 100vh;
+   padding-left: 20px;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    justify-content: space-between;
+    margin-left: 20px; /* Adjust this value as needed */
+}
+.hero-section .hero-details .title{
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: xx-large;
+}
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    font-size: x-large;
+    max-width: 70%;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+}
+.hero-section .hero-details .description{
+    font-size: medium;
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-family: "Russo One", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    
+}
+.button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    border: 4px solid rgb(5, 156, 56); /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: rgb(5, 156, 56); /* Background color on hover */
+    color: white; /* Text color on hover */
+    transform: scale(1.05); /* Scale up the button */
+}
